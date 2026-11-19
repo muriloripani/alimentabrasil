@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações Disponíveis - AlimentaBrasil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagens/foto-logo.jpg" alt="Logo AlimentaBrasil" width="60" class="logo-img">
+            <div>
+                <h1>AlimentaBrasil</h1>
+                <p>CitizenTech contra a fome e o desperdício</p>
+            </div>
+        </div>
+        <button class="hamburger-btn" aria-label="Abrir Menu">☰</button>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="doacoes.html">Doações Disponíveis</a>
+            <a href="quero-doar.html">Quero Doar</a>
+            <a href="integrantes.html">Equipe</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Doações Disponíveis na Sua Região</h2>
+        <p>ONGs cadastradas podem filtrar e reservar alimentos próprios para consumo.</p>
+
+        <!-- Filtros Interativos (JavaScript cuidará disso) -->
+        <section class="caixa filtros-container">
+            <div class="filtro-grupo">
+                <label for="filtro-tipo">Tipo de Alimento:</label>
+                <select id="filtro-tipo" class="campo-filtro">
+                    <option value="todos">Todos</option>
+                    <option value="perecivel">Perecíveis (Frutas/Legumes)</option>
+                    <option value="seco">Secos (Cesta Básica)</option>
+                    <option value="pronto">Prontos para Consumo</option>
+                </select>
+            </div>
+            
+            <div class="filtro-grupo">
+                <label for="filtro-validade">Validade:</label>
+                <select id="filtro-validade" class="campo-filtro">
+                    <option value="todas">Todas</option>
+                    <option value="curta">Vence Hoje/Amanhã</option>
+                    <option value="longa">Mais de 7 dias</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Grid de Resultados (Atributos data-* são lidos pelo JS) -->
+        <section class="grid-doacoes">
+            <article class="card-doacao" data-tipo="perecivel" data-validade="curta">
+                <h3>20kg de Hortaliças e Pães</h3>
+                <p><strong>Doador:</strong> Supermercado Bela Vista</p>
+                <p><strong>Validade:</strong> Vence amanhã</p>
+                <button class="botao" onclick="alert('Lote reservado com sucesso!')">Reservar Lote</button>
+            </article>
+
+            <article class="card-doacao" data-tipo="seco" data-validade="longa">
+                <h3>50kg de Arroz e Feijão</h3>
+                <p><strong>Doador:</strong> Atacadão Central</p>
+                <p><strong>Validade:</strong> Mais de 7 dias</p>
+                <button class="botao" onclick="alert('Lote reservado com sucesso!')">Reservar Lote</button>
+            </article>
+
+            <article class="card-doacao" data-tipo="pronto" data-validade="curta">
+                <h3>15 Marmitas Intactas</h3>
+                <p><strong>Doador:</strong> Restaurante Sabor de Casa</p>
+                <p><strong>Validade:</strong> Vence Hoje</p>
+                <button class="botao" onclick="alert('Lote reservado com sucesso!')">Reservar Lote</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>AlimentaBrasil - Global Solution CitizenTech 2026</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

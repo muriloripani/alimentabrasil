@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero Doar - AlimentaBrasil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagens/foto-logo.jpg" alt="Logo AlimentaBrasil" width="60" class="logo-img">
+                <h1>AlimentaBrasil</h1>
+                <p>CitizenTech contra a fome e o desperdício</p>
+        </div>
+        <button class="hamburger-btn" aria-label="Abrir Menu">☰</button>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="doacoes.html">Doações Disponíveis</a>
+            <a href="quero-doar.html">Quero Doar</a>
+            <a href="integrantes.html">Equipe</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Publicar Lote para Doação</h2>
+        <p>Preencha os dados abaixo para disponibilizar o excedente do seu comércio.</p>
+
+        <section class="caixa">
+            <form action="#" id="form-doacao">
+                <div class="campo">
+                    <label for="estabelecimento">Nome do Estabelecimento:</label>
+                    <input type="text" id="estabelecimento" placeholder="Ex: Padaria Central">
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição do Lote (Qtd e Alimento):</label>
+                    <input type="text" id="descricao" placeholder="Ex: 10kg de pão francês">
+                </div>
+
+                <div class="campo">
+                    <label for="data-vencimento">Data de Vencimento:</label>
+                    <input type="date" id="data-vencimento">
+                </div>
+
+                <button type="button" class="botao" onclick="alert('Lote publicado! Uma ONG será notificada em breve.')">Publicar Lote</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>AlimentaBrasil - Global Solution CitizenTech 2026</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+/* =======================================================
+   ALIMENTABRASIL - ESTILOS GLOBAIS (GLOBAL SOLUTION)
+   ======================================================= */
+
+/* 1. Reset Básico e Tipografia Moderna */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --cor-principal: #2E7D32; /* Verde Sustentável */
+    --cor-secundaria: #F57C00; /* Laranja (Ação/Botões) */
+    --cor-fundo: #F9FBE7; /* Fundo bege muito claro */
+    --cor-texto: #333333;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o footer ficar sempre no fundo */
+}
+
+/* 2. Cabeçalho e Navegação (Flexbox) */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between; /* Separa o Logo do Menu */
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+.logo-container p {
+    font-size: 0.85rem;
+    color: #C8E6C9;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #FFB74D;
+}
+
+/* 3. Área Principal (Main) */
+main {
+    flex: 1; /* Ocupa o espaço disponível empurrando o footer */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+h2 {
+    color: var(--cor-principal);
+    margin-top: 40px; /* Descola o título da caixa de cima */
+    margin-bottom: 25px; /* Descola o título da caixa de baixo */
+    font-size: 2rem;
+}
+
+/* Nova regra para o subtítulo abaixo do H2 */
+main p {
+    margin-bottom: 25px; /* ...e empurra o conteúdo seguinte para baixo */
+}
+
+
+.banner {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto 0;
+}
+
+/* 4. Sistema de Grid e Cartões (Caixas) */
+.grid-doacoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.caixa, .card-doacao {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px; /* <--- ESTA É A LINHA QUE SEPARA AS CAIXAS */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-doacao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.caixa h3, .card-doacao h3 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.caixa p, .card-doacao p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 5. Botões e Formulários */
+.botao {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: #E65100;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: var(--cor-principal);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+/* 6. Filtros (Página de Doações) */
+.filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-left: 5px solid var(--cor-principal);
+    margin-bottom: 30px;
+}
+
+.filtro-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-filtro {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #1B5E20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* 8. Validação JS e Alertas */
+.input-error {
+    border: 2px solid #D32F2F !important;
+    background-color: #FFEBEE;
+}
+
+#feedback-sucesso {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #C8E6C9;
+    color: #1B5E20;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 9. Responsividade (Mobile) */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+    
+    .hamburger-btn {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none; /* Escondido por padrão, o JS vai alterar isto */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        gap: 15px;
+    }
+    
+    .nav-menu.active {
+        display: flex; /* Classe adicionada pelo JS ao clicar no botão */
+    }
+    
+    .nav-menu a {
+        background-color: rgba(255,255,255,0.1);
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .caixa {
+    margin-bottom: 40px !important; 
+}
+
+main h2 {
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+}
+
+.caixa ul {
+    margin-left: 30px !important;
+}
+
+.caixa li {
+    margin-bottom: 15px !important;
+    line-height: 1.6 !important;
+}
+}
