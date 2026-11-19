@@ -22,22 +22,25 @@ O projeto atua diretamente nos **ODS 2 (Fome Zero), 10, 11 e 13 da ONU**. A noss
 | <img src="imagens/foto-matheus.jpg" width="50" alt="Foto de Matheus Batista"> | Matheus Batista da Silva | 574575 | 1TDSPS-2026 | [LinkedIn](URL) • [GitHub](https://github.com/MatheusBatista1910) |
 | <img src="imagens/foto-rafael.jpg" width="50" alt="Foto de Rafael de Oliveira"> | Rafael de Oliveira Santos | 575758 | 1TDSPS-2026 | [LinkedIn](URL) • [GitHub](https://github.com/rafaosfiap) |
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
+
 ```text
-alimenta-brasil/ 
-├── css/ 
-│   └── style.css            # Estilização responsiva
-├── imagens/                 # Logotipos e assets
-├── js/ 
-│   └── script.js            # Lógica interativa da aplicação
-├── index.html               # Página inicial 
-├── sobre.html               # ODS e Propósito do projeto
-├── doacoes.html             # [SOLUÇÃO] Lista de lotes com filtro dinâmico JS
-├── quero-doar.html          # [SOLUÇÃO] Formulário de cadastro de lotes 
-├── integrantes.html         # Equipe desenvolvedora
-├── faq.html                 # Dúvidas Frequentes 
-├── contato.html             # Formulário de contato institucional
-└── README.md                # Documentação técnica
+alimenta-brasil/
+├── css/
+│   └── style.css
+├── imagens/
+│   └── foto-logo.jpg
+├── js/
+│   └── script.js
+├── index.html
+├── sobre.html
+├── doacoes.html
+├── quero-doar.html
+├── integrantes.html
+├── faq.html
+├── contato.html
+└── README.md
+```
 
 ## Capturas de Tela do Sistema
 
@@ -46,6 +49,16 @@ alimenta-brasil/
 ![Página de doações disponíveis com filtro](imagens/foto-site2.jpg)
 
 ![Formulário de cadastro de doadores](imagens/foto-site3.jpg)
+
+*Legenda: Visão geral da interface responsiva e das funcionalidades da plataforma AlimentaBrasil.*
+
+## Repositório
+
+Repositório Oficial GitHub: https://github.com/muriloripani/alimentabrasil
+
+## Contato
+
+Para parcerias institucionais ou suporte: muribarbeiro@gmail.com
 
 *Legenda: Visão geral da interface responsiva e das funcionalidades da plataforma AlimentaBrasil.*
 
